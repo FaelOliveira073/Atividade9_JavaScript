@@ -44,7 +44,8 @@
 		<!---MARCUS--->
 <section>
     <fieldset>
-        <legend><h1>Pack Marcus the Worm (Inglês)</h1></legend>
+        <legend><h1>Pack Marcus the Worm (Inglês)</h1>
+</legend>
 	<p>“You think it's this easy, Robert? You think it's a simple answer. 
 	It's, it's not. It's never what you think it is. 
 	In the end, what matters? Nothing, right? So you make it for yourself" <br><i>Marcus the Worm</i></p>
@@ -53,7 +54,7 @@
 <!---IMAGEM MARCUS--->
 	<img src="marcus.png"; 
 	alt="Maecus the worm" width="200" height="200">
-	<p id="mensagem">Esse é Marcus, ele removeu a Carolina do Norte...</p>
+	<p id="mensagem"></p>
 
 <button type="button" onclick="trocar()">Trocar texto</button>
 
@@ -67,7 +68,7 @@
         		texto.innerHTML = "Esse é Marcus, ele removeu a Carolina do Norte...";
         		alterado = false;
     		} else {
-        		texto.innerHTML = "Porque estava moderadamente irritado";
+        		texto.innerHTML = " ";
         		alterado = true;
     		}
 	}
@@ -79,7 +80,8 @@
 		<!---IPPO--->
 <section>
     <fieldset>
-        <legend>	<h1>Pack Hajime no Ippo (Inglês)</h1></legend>
+        <legend>	<h1>Pack Hajime no Ippo (Inglês)</h1>
+</legend>
 	<p>“Not everyone who works hard is rewarded. But! All those who succeed have worked hard!" <br><i>Kamogawa</i></p>
 
 	<p>Takamura-san, what does it mean to be strong?
@@ -95,7 +97,8 @@
 		<!---DRAGON BALL--->
 <section>
     <fieldset>
-        <legend><h1>Pack Dragon Ball</h1></legend>
+        <legend><h1>Pack Dragon Ball</h1>
+</legend>
 		<p>“Você não perde quando é derrotado, você perde quando desiste" <br><i>Vegeta</i></p>
 
 	<p>“Eu sou o principe dos sayajins e meu orgulho é grande mesmo que você controle meu corpo e minha mente, eu não obedecerei as ordens que você me der" <br><i>Vegeta</i></p>
@@ -110,7 +113,8 @@
 		<!---BLUE LOCK--->
 <section>
     <fieldset>
-        <legend><h1>Pack Blue Lock</h1></legend>
+        <legend><h1>Pack Blue Lock</h1>
+</legend>
 	<p>“A sorte desce igualmente apenas sobre aqueles que estão verdadeiramente preparados para lutar." <br><i>Jinpachi Ego</i></p>
 
 	<p>“Não é uma questão de fazer a escolha certa... eu farei com que o caminho que eu escolher seja o certo." <br><i>Meguru Bachira</i></p>
@@ -168,13 +172,17 @@
  <!---IMAGEM JUJUTSU KAISEN--->
         <img id="imagem()" src="jujutsu.jpg" alt="jujutsu kaisen" width="200" height="200">
         <script>
-          var novaImagem = "gojo.jpeg";
-          function imagem() {
-          imagem().addEventListener('mouseover', function(event){
-              this.querySelector('img').src = novaImagem; 
-               }
-          }              
-        </script>        
+			document.getElementById("gojo").onmouseover = function() {mouseOver()};
+			document.getElementById("gojo").onmouseout = function() {mouseOut()};
+			
+			function mouseOver() {
+				document.getElementById("gojo").src = "gojo.jpeg";
+			}
+			
+			function mouseOut() {
+				document.getElementById("gojo").src = "jujutsu.jpeg";
+			}
+			</script>       
     </fieldset>
 </section>
     
@@ -192,4 +200,4 @@
 	
 
 
-
+
