@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Site Quota store</title>
+</head>
+<body>
+<!--- cabeça--->
+<header  style="background-color: lightgreen; font-family: Arial;">
+
+<h1 style="text-align: center"> 
+	<mark style="background-color: CornflowerBlue;">Store Quote (provisorio)</mark>
+</h1>
+
+<h3 style="text-align: center; font-weight: normal; background-color:lightblue">
+	Compre uma citação e ganhe uma crise existencial
+</h3>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav> 	
+
+
+</header>
+
+
+<main style="background-color: LimeGreen; font-family: Arial;>
+	<article>
+    <!--- INICIO --->
+		<h2 id="inicio">Início</h2>
+		<h3>Bem vindo a <mark style="background-color: Gold;">primeira</mark> loja de citações</h3>
+		<i>Como assim loja de citação?</i>
+		<p>Somos uma loja que vende perolas(citações) de filmes, desenhos, animes, filosofos<br>
+		Valorizamos muito a sabedoria e acreditamos que essa sabedoria pode vim dos lugares mais inesperados<br>
+		Nós te ajudamos a enxergar isso</p><br>
+		<p>É novo aqui?</p>
+		<button type="button" onclick="boasVindas()">Clique aqui</button>
+		<p id="mensagem"></p>
+
+	</article>
+	<script>
+		function boasVindas(){
+			document.getElementById("mensagem").innerHTML=
+			"Esse é nosso primeiro site que usa HTML CSS e javaScript <br> Use o cupom 'SiteFoda' para ganhar 20% de desconto em sua primeira compra";	
+		}
+	</script>		
+	<section>
+		<img src="https://i.scdn.co/image/ab67616d0000b2734f0f9ef8c709c8451f0088df"; alt="Musashi rezando" width="350" height="350">
+	<aside>
+		<p id="textSub">Se você deseja controlar os outros, você deve primeiro...</p>
+	
+	</aside>		
+	<button type="button" onclick="alterarMensagem()">Continuar</button>
+	<script> 
+		function alterarMensagem(){
+		document.getElementById("textSub").innerHTML=
+		"você deve mudar a si mesmo"
+		}
+	</script>
+	</section>
+
+<!--- SERVIÇOS --->
+	<section id="mudarSessao"> <h2 id="servicos">Serviços Oferecidos S2</h2> 
+		<ul> 
+			<li>citações</li> 
+			<li>emoção</li> 
+			<li>crises existencias</li> 
+			<li>vida, verdade e o universo</li> 
+		</ul> 
+	</section> 
+       
+<!--- PREÇO --->
+	<section id="mudarSessao">
+		<h2>Tabela Preços</h2>
+		<table id="tabela" border="1">
+        <thead>
+			<tr><th>Produtos</th>
+				<th>Pack Unico</th>
+				<th>Pack Duplo</th>
+				<th>Grupo pack (3 packs)</th>
+			</tr>
+             </thead>
+             <tbody>
+			<tr><td>Citaçôes da filosofia</td>
+				<td>R$20</td>
+				<td>R$30</td>
+				<td>R$50</td>
+			</tr>
+            
+            <tr>
+            <td>Citações sentimentais</td>
+            <td>R$25</td>
+            <td>R$35</td>
+            <td>R$40</td>
+            </tr>
+            
+            <tr>
+            <td> Crise existencial</td>
+            <td>R$30</td>
+            <td>R$40</td>
+            <td>R$60</td>
+            </tr>
+            
+            <tr> 
+            <td>Diversos</td>
+            <td>R$15</td>
+            <td>R$20</td>
+            <td>R$30</td>
+            </tr>
+            </tbody>
+		</table>
+	</section>
+    
+<!--- EXEMPLO --->
+    <section>
+    <h2>Exemplo</h2>
+    <a href="pagina2.html">Para mais exemplos, clique aqui </a>
+    <h4>"É importante extrair sabedoria de diferentes lugares. Se você levá-la de apenas um lugar, se tornará rígido e velho."<br><i>Tio iroh - Avatar </i></h4>
+    <h4>“Um homem não pode entender a arte que está estudando se apenas procura o resultado final sem ter tempo para se aprofundar no raciocínio do estudo.”<br><i>Musashi Miyamoto</i></h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SEa4DsHqD_g?si=Yjdro6uEe0fOTkgb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+</main>
+</body>
+<footer>
+
+<!--- PÉ --->
+  <h2 id="contato">Contato</h2>
+  
+  <p><strong>Telefone:</strong> (73) 7373-7373</p>
+  <p><strong>E-mail:</strong> contato@empresafoda.com</p>
+  
+  <h2>Endereço</h2>
+  <address>
+    Rua das empadas, 73<br>
+    Bairro da lua<br>
+    Mosquito - GG<br>
+    CEP: 12345-666
+  </address>
+  
+  <p>&copy; 2026 quote store. Todos os direitos reservados.</p>
+</footer>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

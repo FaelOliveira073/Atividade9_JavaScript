@@ -1,0 +1,89 @@
+/* Corpo */
+body{
+    font-family: Arial;
+    background-color: #e6ffe6s;
+    margin:0;
+}
+
+/* Cabeça */
+header{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+nav ul {
+    display: flex;            
+    justify-content: center;  
+    list-style: none;         
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+
+nav li {
+    display: block;           
+}
+
+nav a {
+    display: block;
+    padding: 16px 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* Efeito no mouse */
+nav a:hover {
+    background-color: #111;
+}
+
+/* Conteúdo principal */
+main{
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Seções */
+section{
+    background-color: lightgreen;
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px solid green;
+}
+
+
+article{
+    margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+/* Imagem */
+img{
+    border: 3px solid black;
+    display:block; 
+    border-radius:10px;
+    margin:auto;
+}
+
+/* Tabela */
+table{
+    width: 100%;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* pé */
+footer{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
